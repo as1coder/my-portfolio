@@ -17,7 +17,7 @@ export default function Header() {
   return (
     <header className="w-full px-8 py-4 backdrop-blur-md bg-white/10 border-b border-white/20 text-white flex justify-between items-center fixed top-0 z-50">
       <h2 className="text-3xl font-extrabold tracking-tight font-sans">
-        Rehan<span className="text-indigo-400">'s</span> Portfolio
+        Rehan<span className="text-indigo-400">&apos;s</span> Portfolio
       </h2>
 
       <nav className="hidden md:flex space-x-8 text-lg">
