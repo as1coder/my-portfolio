@@ -70,7 +70,7 @@ export default function ProjectsSection() {
         
             <h3 className="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">
               {project.title}
-            <span className='text-xl font-sans ml-10 mb-2.5 text-gray-400'>
+            <span className='text-lg font-sans ml-10 mb-2.5 text-gray-400'>
               {project.condition}
             </span>
             </h3>
