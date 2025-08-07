@@ -7,13 +7,21 @@ import { motion } from 'framer-motion';
 const projects = [
   {
     title: "Portfolio Website",
+    condition: "Completed",
     description: "A personal portfolio showcasing my projects and skills with animated UI.",
     link: "#"
   },
   {
     title: "Notes App",
+    condition: "Completed",
     description: "A responsive MERN stack Notes app with CRUD operations.",
     link: "https://notesapp-frontend-kappa.vercel.app/"
+  },
+  {
+    title: "Book Bazaar",
+    condition: "Not Completed",
+    description: "An e-commerce platform for buying and selling books, built with Next.js and Tailwind CSS.",
+    link: "https://book-bazaar-frontend.vercel.app/"
   },
 
 ];
@@ -59,9 +67,14 @@ export default function ProjectsSection() {
             variants={cardVariants}
             target="_blank"
           >
+        
             <h3 className="text-2xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-500">
               {project.title}
+            <span className='text-xl font-sans ml-10 mb-2.5 text-gray-400'>
+              {project.condition}
+            </span>
             </h3>
+            
             <div>
             <p className="text-white/80 group-hover:text-white transition-colors duration-300">
               {project.description}
