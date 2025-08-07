@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: "Portfolio Website",
+    title: "Portfolio",
     condition: "Completed",
     description: "A personal portfolio showcasing my projects and skills with animated UI.",
     link: "#"
@@ -19,9 +19,9 @@ const projects = [
   },
   {
     title: "Book Bazaar",
-    condition: "Not Complete",
+    condition: "progress",
     description: "An e-commerce platform for buying and selling books, built with Next.js and Tailwind CSS.",
-    link: "https://book-bazaar-frontend.vercel.app/"
+    link: "https://v0-student-marketplace-app-ruby.vercel.app/"
   },
 
 ];
