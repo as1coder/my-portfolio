@@ -19,7 +19,7 @@ const projects = [
   },
   {
     title: "Book Bazaar",
-    condition: "Not Completed",
+    condition: "Not Complete",
     description: "An e-commerce platform for buying and selling books, built with Next.js and Tailwind CSS.",
     link: "https://book-bazaar-frontend.vercel.app/"
   },
