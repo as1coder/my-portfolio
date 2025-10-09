@@ -18,7 +18,7 @@ export const metadata = {
   authors: [{ name: "Rehan Raza", url: "https://github.com"}],
   creator: "Rehan Raza",
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.ico",
   },
 };
 

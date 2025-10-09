@@ -12,17 +12,35 @@ const projects = [
     link: "#"
   },
   {
-    title: "Notes App",
-    condition: "Completed",
-    description: "A responsive MERN stack Notes app with CRUD operations.",
-    link: "https://notesapp-frontend-kappa.vercel.app/"
+    title: "My 2nd portfolio",
+    condition: "completed",
+    description: "A personal portfolio showcasing my projects and skills with animated UI.",
+    link: "https://portfolio-builder-seven-tau.vercel.app/73K3GvfMB7hDp95Y36bOzJdZ31H2"
   },
   {
-    title: "Book Bazaar",
-    condition: "progress",
-    description: "An e-commerce platform for buying and selling books, built with Next.js and Tailwind CSS.",
-    link: "https://v0-student-marketplace-app-ruby.vercel.app/"
+    title: "Portfolio Builder",
+    condition: "completed",
+    description: "A web app to create and customize personal portfolios easily.",
+    link: "https://portfolio-builder-seven-tau.vercel.app/"
   },
+  {
+    title: "A Restaurant demo website",
+    condition: "completed",
+    description: "A demo restaurant website with menu, reservations, and contact features.",
+    link: "https://restaurant-nine-wheat.vercel.app/"
+  },
+{
+  title : "Clinic demo website",
+  condition: "completed",
+  description: "A demo clinic website with services, appointments, and contact features.",
+  link: "https://site-demo-gamma.vercel.app/" 
+},
+{
+  title : "Todo app",
+  condition: "completed",
+  description: "A full stack , simple and intuitive todo app to manage tasks efficiently.",
+  link: "https://todo-app-xqcg.vercel.app/"
+}
 
 ];
 
