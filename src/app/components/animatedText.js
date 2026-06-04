@@ -1,12 +1,12 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 export default function AnimatedText() {
-  const sentences = [
+  const sentences = useMemo(() => [
     'Aspiring Web Developer',
     'MERN Stack Enthusiast',
     'Cool UI And Responsive Websites'
-  ];
+  ], []);
 
   const [index, setIndex] = useState(0);
   const [charIndex, setCharIndex] = useState(0);
@@ -15,7 +15,6 @@ export default function AnimatedText() {
 
   useEffect(() => {
     const currentSentence = sentences[index];
-
     let typingSpeed = isDeleting ? 50 : 100;
 
     const timeout = setTimeout(() => {
@@ -26,7 +25,7 @@ export default function AnimatedText() {
         setText(currentSentence.substring(0, charIndex - 1));
         setCharIndex(charIndex - 1);
       } else if (!isDeleting && charIndex === currentSentence.length) {
-        setTimeout(() => setIsDeleting(true), 2000); // Wait 2 sec after typing full line
+        setIsDeleting(true);
       } else if (isDeleting && charIndex === 0) {
         setIsDeleting(false);
         setIndex((prev) => (prev + 1) % sentences.length);
@@ -35,6 +34,16 @@ export default function AnimatedText() {
 
     return () => clearTimeout(timeout);
   }, [charIndex, isDeleting, index, sentences]);
+
+  useEffect(() => {
+    if (!isDeleting && charIndex === sentences[index].length) {
+      const delayTimeout = setTimeout(() => {
+        setIsDeleting(true);
+      }, 2000);
+
+      return () => clearTimeout(delayTimeout);
+    }
+  }, [isDeleting, charIndex, index, sentences]);
 
   return (
     <p className="mt-4 text-2xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-purple-500 to-pink-500 transition-opacity duration-500 ease-in-out w-full p-1 text-center">
