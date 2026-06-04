@@ -12,9 +12,9 @@ export default function Loader({ onFinish }) {
       setShowLoader(true);
       sessionStorage.setItem('hasVisited', 'true');
     } else {
-      onFinish();  
+      onFinish?.();  
     }
-  }, []);
+  }, [onFinish]);
 
   return (
     <>
